@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="title">FreeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input required id="name" type="text" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input required id="email" type="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Number</label>
+                <input required id="number" type="number" min="8" max="12" placeholder="Enter a number">
+            </div>
+            <div class="form-group">
+                <label for="dropdown">What is your favorite feature of freeCodeCamp?</label>
+                <select id="dropdown">
+                    <option value="" disabled>Select an option</option>
+                    <option value="option1">Challenges</option>
+                    <option value="option2">Projects</option>
+                    <option value="option2">Community</option>
+                    <option value="option2">Open Source</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Would you recommend freeCodeCamp to a friend?</label>
+                <div>
+                    <input type="radio" name="radio1" value="option1">Definitely
+                    <input type="radio" name="radio1" value="option2">Maybe
+                </div>
+                <div>
+                    <input type="radio" name="radio2" value="option3">Not sure
+                    <input type="radio" name="radio2" value="option4">No
+                </div>
+            </div>
+            <div class="form-group">
+                <label>What would you like to see improved? (Check all that apply)</label>
+                <div id="checkbox">
+                    <label for="checkbox"><input type="checkbox" value="Front-end Projects"> Front-end Projects
+                    </label>
+                    <label for="checkbox"><input type="checkbox" value="Back-end Projects"> Back-end Projects
+                    </label>
+                    <label for="checkbox"><input type="checkbox" value="Data Visualization"> Data Visualization
+                    </label>
+                    <label for="checkbox"><input type="checkbox" value="Challenges"> Challenges
+                    </label>
+                    <label for="checkbox"><input type="checkbox" value="Open Source Community"> Open Source Community
+                    </label>
+                    <label for="checkbox"><input type="checkbox" value="Gitter help rooms"> Gitter help rooms
+                    </label>
+                    <label for="checkbox"><input type="checkbox" value="Videos"> Videos
+                    </label>
+                    <label for="checkbox"><input type="checkbox" value="City Meetups"> City Meetups
+                    </label>
+                    <label for="checkbox"><input type="checkbox" value="Wiki"> Wiki
+                    </label>
+                    <label for="checkbox"><input type="checkbox" value="Forum"> Forum
+                    </label>
+                    <label for="checkbox"><input type="checkbox" value="Additional Courses"> Additional Courses
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="textarea">Any comments or suggestions?</label>
+                <textarea id="textarea" placeholder="Enter your comments"></textarea>
+            </div>
+            <div class="form-group">
+                <button id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
